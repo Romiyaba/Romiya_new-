@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Online Store</h1>
+        <p>Shopping Cart: <span id="cart-count">0</span></p>
+    </header>
+
+    <main class="products">
+        <div class="product">
+            <h2>Headphones</h2>
+            <p>Price: ₹999</p>
+            <button onclick="addToCart(999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Smart Watch</h2>
+            <p>Price: ₹1499</p>
+            <button onclick="addToCart(1499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Keyboard</h2>
+            <p>Price: ₹799</p>
+            <button onclick="addToCart(799)">Add to Cart</button>
+        </div>
+    </main>
+
+    <section class="cart">
+        <h2>Cart Total: ₹<span id="total">0</span></h2>
+        <button onclick="checkout()">Checkout</button>
+        <p id="message" aria-live="polite"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
